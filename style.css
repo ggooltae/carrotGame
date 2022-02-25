@@ -1,0 +1,114 @@
+html {
+  height: 100%;
+  background-image: url("img/background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+body {
+  height: 100%;
+  margin: 0;
+}
+* {
+  box-sizing: border-box;
+}
+button {
+  border: solid 5px black;
+  outline: none;
+  cursor: pointer;
+}
+
+/* Top Section */
+#topSection {
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 50%;
+}
+
+#topPlayBtn {
+  height: 100px;
+  width: 100px;
+  font-size: 50px;
+  background-color: bisque;
+  border-radius: 20px;
+  margin: 5px 0;
+  transition: all 200ms;
+}
+
+#topPlayBtn:hover {
+  transform: scale(1.2);
+  background-color: coral;
+  color: white;
+}
+
+#topTimer {
+  width: 250px;
+  height: 80px;
+  margin: 20px 0;
+  font-size: 50px;
+  border: 5px solid black;
+  background-color: white;
+  text-align: center;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#topCarrotCnt {
+  background-color: coral;
+  color: white;
+  width: 100px;
+  height: 100px;
+  padding-top: 12px;
+  font-size: 75px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  border: 3px solid black;
+}
+
+/* Bottom Section */
+#bottomSection {
+  height: 50%;
+  position: relative;
+}
+
+#bottomResultDialog {
+  position: absolute;
+  left: 25%;
+  top: 25%;
+  width: 50%;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 30px;
+  opacity: 1;
+}
+
+#dialogReplayBtn {
+  height: 100px;
+  width: 100px;
+  margin-top: 20px;
+  border-radius: 20px;
+  margin-bottom: 10px;
+  background-color: bisque;
+  font-size: 50px;
+  transition: all 200ms;
+}
+
+#dialogReplayBtn:hover {
+  transform: scale(1.2);
+  background-color: coral;
+  color: white;
+}
+
+#dialogMessage {
+  font-size: 90px;
+  color: white;
+}
